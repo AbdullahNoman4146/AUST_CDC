@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@source "../views/**/*.blade.php";
+
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: #252460;
+  --primary: #252460;
+  --primary-foreground: #ffffff;
+  --border: rgba(37, 36, 96, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #252460;
+}
+
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(37, 36, 96, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 36, 96, 0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(37, 36, 96, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(37, 36, 96, 0.15);
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
