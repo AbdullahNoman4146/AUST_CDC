@@ -107,28 +107,28 @@
             'head' => 'Sarah Islam',
             'members' => 8,
             'description' => 'Organizing workshops, seminars, and career fairs throughout the year.',
-            'icon' => '🎯',
+            'icon' => '',
         ],
         [
             'name' => 'Marketing & Outreach',
             'head' => 'Kamal Hassan',
             'members' => 6,
             'description' => 'Managing social media, promotions, and member engagement.',
-            'icon' => '⚡',
+            'icon' => '',
         ],
         [
             'name' => 'Resources & Content',
             'head' => 'Nusrat Jahan',
             'members' => 7,
             'description' => 'Creating and curating career development resources and materials.',
-            'icon' => '🏆',
+            'icon' => '',
         ],
         [
             'name' => 'Corporate Relations',
             'head' => 'Imran Hossain',
             'members' => 5,
             'description' => 'Building partnerships with companies and alumni networks.',
-            'icon' => '👥',
+            'icon' => '',
         ],
     ];
 
@@ -212,7 +212,7 @@
                                                 href="mailto:{{ $member['email'] }}"
                                                 class="team-social-link"
                                                 aria-label="Email {{ $member['name'] }}"
-                                            >✉</a>
+                                            >Email</a>
                                         @endif
 
                                         @if($group['show_whatsapp'] && !empty($whatsappNumber))
@@ -222,7 +222,7 @@
                                                 rel="noreferrer"
                                                 class="team-social-link whatsapp"
                                                 aria-label="WhatsApp {{ $member['name'] }}"
-                                            >☎</a>
+                                            >Call</a>
                                         @endif
                                     </div>
 
@@ -255,7 +255,7 @@
                 @foreach($departments as $dept)
                     <article class="department-card">
                         <div class="department-card-inner">
-                            <div class="department-icon">{{ $dept['icon'] }}</div>
+                            <div class="department-icon">{{ strtoupper(substr($dept['name'], 0, 1)) }}</div>
 
                             <div class="department-content">
                                 <h3 class="department-title">{{ $dept['name'] }}</h3>
@@ -276,7 +276,7 @@
     <section class="team-cta-section">
         <div class="team-cta-wrapper">
             <div class="team-cta-card">
-                <div class="team-cta-icon">👥</div>
+                <div class="team-cta-icon">J</div>
 
                 <h2 class="team-cta-title">Want to Join Our Team?</h2>
 

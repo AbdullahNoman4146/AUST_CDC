@@ -63,15 +63,15 @@
                 <h3 class="text-[#252460] font-semibold mb-4">Contact Us</h3>
                 <ul class="space-y-3 text-sm">
                     <li class="flex items-start space-x-2">
-                        <span class="mt-1 flex-shrink-0 text-[#252460]">📍</span>
+                        <span class="mt-1 flex-shrink-0 text-[#252460] font-semibold">Address:</span>
                         <span class="text-[#252460]/70">Ahsanullah University of Science and Technology, Dhaka, Bangladesh</span>
                     </li>
                     <li class="flex items-center space-x-2">
-                        <span class="text-[#252460]">✉️</span>
+                        <span class="text-[#252460] font-semibold">Email:</span>
                         <a href="mailto:cdc@aust.edu" class="hover:text-[#252460] transition-colors">cdc@aust.edu</a>
                     </li>
                     <li class="flex items-center space-x-2">
-                        <span class="text-[#252460]">📞</span>
+                        <span class="text-[#252460] font-semibold">Phone:</span>
                         <span class="text-[#252460]/70">+880-1234-567890</span>
                     </li>
                 </ul>

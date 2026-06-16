@@ -112,8 +112,8 @@
                             <div class="flex-1">
                                 <h3 class="font-semibold text-[#252460] mb-2 text-lg">{{ $event['title'] }}</h3>
                                 <div class="space-y-1 text-sm text-[#252460]/70">
-                                    <div class="flex items-center gap-2"><span>📅</span><span>{{ $event['time'] }}</span></div>
-                                    <div class="flex items-center gap-2"><span>📍</span><span>{{ $event['location'] }}</span></div>
+                                    <div class="flex items-center gap-2"><span class="font-semibold">Time:</span><span>{{ $event['time'] }}</span></div>
+                                    <div class="flex items-center gap-2"><span class="font-semibold">Location:</span><span>{{ $event['location'] }}</span></div>
                                 </div>
                             </div>
                         </div>
@@ -138,17 +138,17 @@
 
             <div class="grid md:grid-cols-3 gap-6">
                 <a href="{{ route('contact') }}" class="block p-8 text-center hover:shadow-2xl transition-all duration-300 border-0 bg-white rounded-xl hover:scale-105">
-                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">👥</div>
+                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">J</div>
                     <h3 class="text-2xl font-bold text-[#252460] mb-2">Join Us</h3>
                     <p class="text-[#252460]/70">Become part of our 4,500+ member community</p>
                 </a>
                 <a href="{{ route('events') }}" class="block p-8 text-center hover:shadow-2xl transition-all duration-300 border-0 bg-white rounded-xl hover:scale-105">
-                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">📅</div>
+                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">E</div>
                     <h3 class="text-2xl font-bold text-[#252460] mb-2">Events</h3>
                     <p class="text-[#252460]/70">Explore workshops, career fairs, and seminars</p>
                 </a>
                 <a href="{{ route('resources') }}" class="block p-8 text-center hover:shadow-2xl transition-all duration-300 border-0 bg-white rounded-xl hover:scale-105">
-                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">📚</div>
+                    <div class="w-16 h-16 bg-[#252460] rounded-full flex items-center justify-center mx-auto mb-4 text-white text-3xl">R</div>
                     <h3 class="text-2xl font-bold text-[#252460] mb-2">Resources</h3>
                     <p class="text-[#252460]/70">Access templates, guides, and career tools</p>
                 </a>
