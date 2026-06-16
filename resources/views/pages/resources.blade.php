@@ -42,7 +42,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto animate-fade-up">
                 <div class="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-6">
-                    <span class="text-[#252460]">✨</span>
+                    <span class="sr-only">Resources</span>
                     <span class="text-sm text-[#252460]">Free Career Resources</span>
                 </div>
                 <h1 class="text-5xl lg:text-6xl mb-6 text-[#252460]">Career Development <span class="text-[#252460]">Resources</span></h1>
@@ -50,9 +50,8 @@
             </div>
 
             <div class="max-w-2xl mx-auto mt-8">
-                <div class="relative glass-card p-2 rounded-lg">
-                    <span class="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-400">🔎</span>
-                    <input type="text" placeholder="Search resources..." class="w-full pl-12 bg-transparent border-0 text-[#252460] placeholder:text-[#252460]/70 focus:outline-none px-4 py-3">
+                    <div class="relative glass-card p-2 rounded-lg">
+                    <input type="text" placeholder="Search resources..." class="w-full bg-transparent border-0 text-[#252460] placeholder:text-[#252460]/70 focus:outline-none px-4 py-3">
                 </div>
             </div>
         </div>
@@ -73,7 +72,7 @@
                     @foreach($resumeTemplates as $template)
                         <div class="p-6 glass-card border border-[#252460]/20 hover:border-[#252460]/50 transition-all duration-300 h-full flex flex-col justify-between rounded-2xl hover:-translate-y-1">
                             <div>
-                                <div class="w-12 h-12 bg-[#252460] rounded-lg flex items-center justify-center mb-4 text-white text-2xl">📄</div>
+                                <div class="w-12 h-12 bg-[#252460] rounded-lg flex items-center justify-center mb-4 text-white text-2xl">{{ strtoupper(substr($template['type'], 0, 1)) }}</div>
                                 <h3 class="text-xl mb-2 text-[#252460]">{{ $template['name'] }}</h3>
                                 <div class="flex items-center justify-between mb-4">
                                     <span class="bg-gray-200 text-[#252460] border-0 px-3 py-1 rounded-full text-xs">{{ $template['type'] }}</span>
@@ -93,7 +92,7 @@
                         <div class="p-6 glass-card border border-[#252460]/20 hover:border-[#252460]/50 transition-all duration-300 h-full flex flex-col justify-between rounded-2xl hover:-translate-y-1">
                             <div>
                                 <div class="flex items-start justify-between mb-4">
-                                    <div class="w-12 h-12 bg-[#252460] rounded-lg flex items-center justify-center text-white text-2xl">📚</div>
+                                    <div class="w-12 h-12 bg-[#252460] rounded-lg flex items-center justify-center text-white text-2xl">{{ strtoupper(substr($guide['category'], 0, 1)) }}</div>
                                     <span class="bg-[#252460] text-white border-0 px-3 py-1 rounded-full text-xs">{{ $guide['category'] }}</span>
                                 </div>
                                 <h3 class="text-xl mb-2 text-[#252460]">{{ $guide['title'] }}</h3>

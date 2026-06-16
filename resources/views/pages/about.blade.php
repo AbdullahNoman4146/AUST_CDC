@@ -14,10 +14,10 @@
     ];
 
     $values = [
-        ['icon' => '💡', 'title' => 'Innovation', 'description' => 'Embracing new ideas and creative approaches to career development'],
-        ['icon' => '🤍', 'title' => 'Excellence', 'description' => 'Striving for the highest standards in everything we do'],
-        ['icon' => '👥', 'title' => 'Collaboration', 'description' => 'Working together to achieve common goals and support each other'],
-        ['icon' => '⚡', 'title' => 'Impact', 'description' => 'Making a meaningful difference in students\' career journeys'],
+        ['icon' => '', 'title' => 'Innovation', 'description' => 'Embracing new ideas and creative approaches to career development'],
+        ['icon' => '', 'title' => 'Excellence', 'description' => 'Striving for the highest standards in everything we do'],
+        ['icon' => '', 'title' => 'Collaboration', 'description' => 'Working together to achieve common goals and support each other'],
+        ['icon' => '', 'title' => 'Impact', 'description' => 'Making a meaningful difference in students\' career journeys'],
     ];
 @endphp
 
@@ -32,15 +32,35 @@
     </section>
 
     <section class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-8 lg:p-12 rounded-2xl border border-[#252460]/30">
+                <h2 class="text-4xl mb-6 text-[#252460] text-center">Affiliation & Advisor</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-[#252460]/80 text-lg">
+                    <div>
+                        <h3 class="text-2xl mb-2 text-[#252460]">Department / University Affiliation</h3>
+                        <p>AUST Career Development Club (AUST CDC) is officially affiliated with Ahsanullah University of Science and Technology (AUST). We collaborate with university departments and student affairs to provide career development programs, resources, and events for students across all faculties.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl mb-2 text-[#252460]">Advisor / Faculty Information</h3>
+                        <p><strong>Advisor:</strong> Dr. [Advisor Name] — Faculty, Department of [Department Name], Ahsanullah University of Science and Technology.</p>
+                        <p><strong>Contact:</strong> [advisor.email@example.com] (replace with real contact details)</p>
+                        <p class="mt-4">If you'd like, provide the advisor's name, department and contact and I'll update this section with the exact details.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-2 gap-12">
                 <div class="p-8 h-full glass-card border-2 border-[#252460]/30 hover:border-[#252460] transition-all duration-300 rounded-2xl">
-                    <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">🎯</div>
+                    <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">M</div>
                     <h2 class="text-3xl mb-4 text-[#252460]">Our Mission</h2>
                     <p class="text-[#252460]/80 text-lg">To empower AUST students with the knowledge, skills, and connections needed to excel in their chosen careers. We strive to bridge the gap between academic learning and professional success through comprehensive career development programs, mentorship, and industry engagement.</p>
                 </div>
                 <div class="p-8 h-full glass-card border-2 border-[#252460]/30 hover:border-[#252460] transition-all duration-300 rounded-2xl">
-                    <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">👁️</div>
+                    <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mb-6 text-white text-3xl">V</div>
                     <h2 class="text-3xl mb-4 text-[#252460]">Our Vision</h2>
                     <p class="text-[#252460]/80 text-lg">To be the leading career development club in Bangladesh, recognized for our commitment to student success and our innovative approach to career preparation. We envision a future where every AUST student is equipped with the tools and confidence to pursue their dream career.</p>
                 </div>
@@ -81,7 +101,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 @foreach($values as $value)
                     <div class="p-6 text-center h-full glass-card border border-[#252460]/20 hover:border-[#252460]/50 transition-all duration-300 rounded-2xl hover:scale-105">
-                        <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mx-auto mb-4 text-white text-3xl">{{ $value['icon'] }}</div>
+                        <div class="w-16 h-16 bg-[#252460] rounded-2xl flex items-center justify-center mx-auto mb-4 text-white text-3xl">{{ strtoupper(substr($value['title'], 0, 1)) }}</div>
                         <h3 class="text-xl mb-3 text-[#252460]">{{ $value['title'] }}</h3>
                         <p class="text-[#252460]/80">{{ $value['description'] }}</p>
                     </div>
@@ -98,17 +118,17 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center glass-card p-8 rounded-2xl border border-[#252460]/30 hover:border-[#252460] transition-all duration-300">
-                    <div class="mx-auto mb-4 text-[#252460] text-5xl">📈</div>
+                    <div class="mx-auto mb-4 text-[#252460] text-5xl">S</div>
                     <div class="text-5xl mb-2 text-[#252460]">2500+</div>
                     <p class="text-[#252460]/80">Students Guided</p>
                 </div>
                 <div class="text-center glass-card p-8 rounded-2xl border border-[#252460]/30 hover:border-[#252460] transition-all duration-300">
-                    <div class="mx-auto mb-4 text-[#252460] text-5xl">👥</div>
+                    <div class="mx-auto mb-4 text-[#252460] text-5xl">W</div>
                     <div class="text-5xl mb-2 text-[#252460]">150+</div>
                     <p class="text-[#252460]/80">Workshops Conducted</p>
                 </div>
                 <div class="text-center glass-card p-8 rounded-2xl border border-[#252460]/30 hover:border-[#252460] transition-all duration-300">
-                    <div class="mx-auto mb-4 text-[#252460] text-5xl">🏆</div>
+                    <div class="mx-auto mb-4 text-[#252460] text-5xl">P</div>
                     <div class="text-5xl mb-2 text-[#252460]">1000+</div>
                     <p class="text-[#252460]/80">Successful Placements</p>
                 </div>

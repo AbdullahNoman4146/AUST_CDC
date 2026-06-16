@@ -49,10 +49,10 @@
                                     <h3 class="text-2xl mb-3 text-[#252460]">{{ $event['title'] }}</h3>
                                     <p class="text-[#252460]/80 mb-4">{{ $event['description'] }}</p>
                                     <div class="grid sm:grid-cols-2 gap-3 mb-4">
-                                        <div class="flex items-center space-x-2 text-[#252460]"><span>📅</span><span>{{ $event['date'] }}</span></div>
-                                        <div class="flex items-center space-x-2 text-[#252460]"><span>🕒</span><span>{{ $event['time'] }}</span></div>
-                                        <div class="flex items-center space-x-2 text-[#252460]"><span>📍</span><span>{{ $event['location'] }}</span></div>
-                                        <div class="flex items-center space-x-2 text-[#252460]"><span>👥</span><span>{{ $event['registered'] }}/{{ $event['spots'] }} Registered</span></div>
+                                        <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Date:</span><span>{{ $event['date'] }}</span></div>
+                                        <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Time:</span><span>{{ $event['time'] }}</span></div>
+                                        <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Location:</span><span>{{ $event['location'] }}</span></div>
+                                        <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Registered:</span><span>{{ $event['registered'] }}/{{ $event['spots'] }}</span></div>
                                     </div>
                                     <div class="mb-4">
                                         <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
@@ -76,8 +76,8 @@
                         <h3 class="text-xl mb-3 text-[#252460]">{{ $event['title'] }}</h3>
                         <p class="text-[#252460]/80 mb-4">{{ $event['description'] }}</p>
                         <div class="flex items-center justify-between text-sm gap-4">
-                            <div class="flex items-center space-x-2 text-[#252460]"><span>📅</span><span>{{ $event['date'] }}</span></div>
-                            <div class="flex items-center space-x-2 text-[#252460]"><span>👥</span><span>{{ $event['attendees'] }} Attendees</span></div>
+                            <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Date:</span><span>{{ $event['date'] }}</span></div>
+                            <div class="flex items-center space-x-2 text-[#252460]"><span class="font-semibold">Attendees:</span><span>{{ $event['attendees'] }}</span></div>
                         </div>
                     </div>
                 @endforeach
